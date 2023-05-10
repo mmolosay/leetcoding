@@ -18,6 +18,17 @@ fun e9_isPalindrome_1(number: Int): Boolean {
     return true
 }
 
+fun e9_isPalindrome_2(number: Int): Boolean {
+    if (number < 0 || (number % 10 == 0 && number != 0)) return false
+    var copy = number
+    var reverted = 0
+    while (copy > reverted) {
+        reverted = reverted * 10 + (copy % 10)
+        copy /= 10
+    }
+    return (copy == reverted || copy == reverted / 10)
+}
+
 private fun Int.digitAt(index: Int, totalDigits: Int): Int {
     val power = totalDigits - index - 1
     return (this / tenInPower(power)) % 10
