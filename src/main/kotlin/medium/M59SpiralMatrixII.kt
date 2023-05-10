@@ -3,7 +3,7 @@ package medium
 /**
  * [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)
  */
-fun m59makeSpiralMatrix(order: Int): Array<IntArray> {
+fun m59_makeSpiralMatrix(order: Int): Array<IntArray> {
     val result = Array(order) { IntArray(order) }
     val total = order * order
     var ordinal = 1

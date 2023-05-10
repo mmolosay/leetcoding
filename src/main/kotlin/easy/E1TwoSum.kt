@@ -3,7 +3,7 @@ package easy
 /**
  * [1. Two Sum](https://leetcode.com/problems/two-sum/)
  */
-fun e1twoSum(nums: IntArray, target: Int): IntArray {
+fun e1_twoSum(nums: IntArray, target: Int): IntArray {
     val traversed = mutableMapOf<Int, Int>()
     for (i in nums.indices) {
         val counterpart = target - nums[i]

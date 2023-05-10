@@ -1,6 +1,6 @@
 package easy
 
-fun e9isPalindrome(number: Int): Boolean {
+fun e9_isPalindrome_1(number: Int): Boolean {
     if (number < 0) return false
     if (number == 0) return true
     var copy = number
