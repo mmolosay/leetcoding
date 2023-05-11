@@ -1,5 +1,8 @@
 package easy
 
+/**
+ * [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+ */
 fun e9_isPalindrome_1(number: Int): Boolean {
     if (number < 0) return false
     if (number == 0) return true
