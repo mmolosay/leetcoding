@@ -1,5 +1,8 @@
 package easy
 
+/**
+ * [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+ */
 fun e20_isValid(s: String): Boolean {
     val opened = ArrayDeque<Char>(s.length / 2)
     for (char in s) {
