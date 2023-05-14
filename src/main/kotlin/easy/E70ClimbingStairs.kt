@@ -3,6 +3,7 @@ package easy
 /**
  * [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
  */
+// https://www.youtube.com/watch?v=RrFg9SZ8VoM
 fun e70_climbStairs(n: Int): Int {
     // bottom-up approach
     var prev = 1 // number of ways to climb to (i - 2) step
